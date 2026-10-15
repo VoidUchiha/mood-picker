@@ -77,6 +77,21 @@
       cursor: pointer;
       transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
     }
+          .mood-button:hover {
+      transform: translateY(-2px);
+      border-color: #c8b2f3;
+    }
+
+    .mood-button:focus-visible {
+      outline: 3px solid #f0b429;
+      outline-offset: 3px;
+    }
+
+    .mood-button.active {
+      border-color: var(--accent-dark);
+      color: #ffffff;
+      background: var(--accent);
+    }
   </style>
 </head>
 <body>
