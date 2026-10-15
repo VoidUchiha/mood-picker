@@ -7,5 +7,22 @@
 </head>
 <body>
   <h1>Mood Picker</h1>
+    <main>
+    <p class="eyebrow">Quick reset</p>
+    <h1>How are you feeling?</h1>
+    <p class="intro">Choose a mood and get one small activity you can try right now.</p>
+
+    <div class="mood-grid" aria-label="Mood choices">
+      <button class="mood-button" type="button" data-mood="energized" aria-pressed="false">Energized</button>
+      <button class="mood-button" type="button" data-mood="calm" aria-pressed="false">Calm</button>
+      <button class="mood-button" type="button" data-mood="curious" aria-pressed="false">Curious</button>
+      <button class="mood-button" type="button" data-mood="tired" aria-pressed="false">Tired</button>
+    </div>
+
+    <section class="result" aria-live="polite">
+      <p class="result-label">Your activity</p>
+      <p id="recommendation">Pick a mood to see a suggestion.</p>
+    </section>
+  </main>
 </body>
 </html>
