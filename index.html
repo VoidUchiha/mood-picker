@@ -65,26 +65,21 @@
       gap: 12px;
     }
 
-    .mood-button {
+      .mood-button,
+    .surprise-button {
       min-height: 58px;
       padding: 14px 18px;
-      border: 2px solid transparent;
       border-radius: 16px;
-      color: var(--ink);
-      background: var(--soft);
       font: inherit;
       font-weight: 750;
       cursor: pointer;
       transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
     }
-          .mood-button:hover {
-      transform: translateY(-2px);
-      border-color: #c8b2f3;
-    }
 
-    .mood-button:focus-visible {
-      outline: 3px solid #f0b429;
-      outline-offset: 3px;
+    .mood-button {
+      border: 2px solid transparent;
+      color: var(--ink);
+      background: var(--soft);
     }
 
     .mood-button.active {
