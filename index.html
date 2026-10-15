@@ -59,6 +59,24 @@
       font-size: 1.05rem;
       line-height: 1.6;
     }
+          .mood-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .mood-button {
+      min-height: 58px;
+      padding: 14px 18px;
+      border: 2px solid transparent;
+      border-radius: 16px;
+      color: var(--ink);
+      background: var(--soft);
+      font: inherit;
+      font-weight: 750;
+      cursor: pointer;
+      transition: transform 160ms ease, border-color 160ms ease, background 160ms ease;
+    }
   </style>
 </head>
 <body>
