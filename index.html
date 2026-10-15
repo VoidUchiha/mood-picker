@@ -140,5 +140,31 @@
       <p id="recommendation">Pick a mood to see a suggestion.</p>
     </section>
   </main>
+    <script>
+    const activities = {
+      energized: "Put on one song and take a brisk walk.",
+      calm: "Make a warm drink and write down one thing you appreciate.",
+      curious: "Spend ten minutes learning one surprising fact.",
+      tired: "Step away from the screen, stretch, and take five slow breaths."
+    };
+
+    const recommendation = document.querySelector("#recommendation");
+    const moodButtons = document.querySelectorAll(".mood-button");
+
+    function chooseMood(button) {
+      const mood = button.dataset.mood;
+      recommendation.textContent = activities[mood];
+
+      for (const moodButton of moodButtons) {
+        const isSelected = moodButton === button;
+        moodButton.classList.toggle("active", isSelected);
+        moodButton.setAttribute("aria-pressed", String(isSelected));
+      }
+    }
+
+    for (const button of moodButtons) {
+      button.addEventListener("click", () => chooseMood(button));
+    }
+  </script>
 </body>
 </html>
