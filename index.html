@@ -64,6 +64,20 @@
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 12px;
     }
+          .mood-button:hover,
+    .surprise-button:hover {
+      transform: translateY(-2px);
+    }
+
+    .mood-button:hover {
+      border-color: #c8b2f3;
+    }
+
+    .mood-button:focus-visible,
+    .surprise-button:focus-visible {
+      outline: 3px solid #f0b429;
+      outline-offset: 3px;
+    }
 
       .mood-button,
     .surprise-button {
